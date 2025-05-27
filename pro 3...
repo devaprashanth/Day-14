@@ -1,0 +1,27 @@
+
+#include<stdio.h>
+int main()
+{
+    int p,r,y;
+    scanf("%d%d%d",&p,&r,&y);
+    float in,dis,am,total;
+    
+    in=(p*r*y)/100;
+    {
+        printf("\n%f",in);
+    }
+    am=p+in;
+    {
+        printf("\n%f",am);
+    }
+    dis=in*0.02;
+    {
+        printf("\n%f",dis);
+    }
+    
+    total= am-dis;
+    {
+        printf("\n%f",total);
+    }
+    return 0;
+}
