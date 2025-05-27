@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int a, op;
+    scanf("%d %d", &a, &op);
+
+    int arr[a];
+    for (int i = 0; i < a; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    for (int j = 0; j < op; j++) {
+        int start, end;
+        scanf("%d %d", &start, &end);
+
+        int count = 0;
+        for (int i = 0; i < a; i++) {
+            if (arr[i] >= start && arr[i] <= end) {
+                count++;
+            }
+        }
+
+        printf("\n%d\n", count);
+    }
+
+    return 0;
+}
