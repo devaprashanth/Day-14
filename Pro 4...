@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int team,student;
+    scanf("%d%d",&team,&student);
+    
+    int inStudent=team/student;
+    int outStudent=team%student;    
+    
+    printf("%d",inStudent);
+    printf("\n%d",outStudent);
+    
+    return 0;
+}
